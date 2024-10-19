@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusRing</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <img class="img-logo" src="img/NexusRing.png">
+        <p class="title">NexusRing</p>
+        <ul>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About us</a></li>
+            <li><a href="#support"><i class="fa-solid fa-headset"></i> Support</a></li>
+            <li><a href="#search"><i class="fas fa-search"></i> Search</a></li>
+            <li><a onclick="window.location.href='basket.html'"><i class="fa-solid fa-cart-shopping"></i> Basket</a></li>
+            <li><a id="login" onclick="window.location.href='login.html'"><i class="fa-solid fa-user"></i> Login</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="img/image.gif" alt="Vidéo de la bague 3D">
+    </header>
+    <main id="product-content">
+        <!--Le javascript vient se mettre ici-->
+    </main>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="product-modal row">
+                <div class="col-6">
+                    <h1 id="modal2-product-name">Modèle Graphite</h1>
+                    <p id="modal2-product-description">Découvrez l'élégance intemporelle avec notre modèle Graphite.
+                        Cette bague exquise est conçue pour ceux qui apprécient la finesse et le raffinement. <br>
+
+                        <b>Description détaillée du modèle Graphite :</b> Fabriquée avec des matériaux de haute qualité, cette
+                        bague
+                        offre une durabilité exceptionnelle tout en conservant une allure sophistiquée. Son design
+                        élégant s'adapte parfaitement à toutes les occasions, qu'il s'agisse d'un événement formel ou
+                        d'une sortie décontractée.
+                    </p>
+                    <label for="lname">Texte à graver:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <select name="size" id="size-select">
+                        <option value="">taille de la bague</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <p id="modal2-product-price">Prix: 349CHF</p>
+                    <button class="btn-modal" id="modal2-buy-button"
+                        onclick="addToCart('Produit 1', 'Description détaillée du produit 1', '349CHF')">Acheter
+                    </button>
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-detail" src="img/modele-gravage1.png" alt="Bague 2">
+                </div>
+            </div>
+            <div class="product-modal row">
+                <div class="col-6">
+                    <h1 id="modal2-product-name">Modèle couleur Or</h1>
+                    <p id="modal2-product-description">Découvrez l'élégance intemporelle avec notre modèle couleur Or.
+                        Cette bague exquise est conçue pour ceux qui apprécient la finesse et le raffinement. <br>
+
+                        <b>Description détaillée du modèle couleur Or :</b> Fabriquée avec des matériaux de haute qualité, cette
+                        bague
+                        offre une durabilité exceptionnelle tout en conservant une allure sophistiquée. Son design
+                        élégant s'adapte parfaitement à toutes les occasions, qu'il s'agisse d'un événement formel ou
+                        d'une sortie décontractée.
+                    </p>
+                    <label for="lname">Texte à graver:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <select name="size" id="size-select">
+                        <option value="">taille de la bague</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <p id="modal2-product-price">Prix: 349CHF</p>
+                    <button class="btn-modal" id="modal2-buy-button"
+                        onclick="addToCart('Produit 2', 'Description détaillée du produit 2', '349CHF')">Acheter
+                    </button>
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-detail" src="img/modele-gravage2.png" alt="Bague 2">
+                </div>
+            </div>
+            <div class="product-modal row">
+                <div class="col-6">
+                    <h1 id="modal2-product-name">Modèle Bleu Azur</h1>
+                    <p id="modal2-product-description">Découvrez l'élégance intemporelle avec notre modèle Bleu Azur.
+                        Cette bague exquise est conçue pour ceux qui apprécient la finesse et le raffinement. <br>
+
+                        <b>Description détaillée du modèle Bleu Azur :</b> Fabriquée avec des matériaux de haute qualité, cette
+                        bague
+                        offre une durabilité exceptionnelle tout en conservant une allure sophistiquée. Son design
+                        élégant s'adapte parfaitement à toutes les occasions, qu'il s'agisse d'un événement formel ou
+                        d'une sortie décontractée.
+                    </p>
+                    <label for="lname">Texte à graver:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <select name="size" id="size-select">
+                        <option value="">taille de la bague</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <p id="modal2-product-price">Prix: 349CHF</p>
+                    <button class="btn-modal" id="modal2-buy-button"
+                        onclick="addToCart('Produit 2', 'Description détaillée du produit 2', '349CHF')">Acheter
+                    </button>
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-detail" src="img/modele-gravage3.png" alt="Bague 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="product-modal row">
+                <div class="col-6">
+                    <h1 id="modal1-product-name">Nouveau produit</h1>
+                    <p id="modal1-product-description">Sera bientôt disponible dans nos magasin.</p>
+                    <select name="size" id="size-select" disabled>
+                        <option value="">taille de la bague</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <p id="modal1-product-price">Prix: 400CHF</p>
+                    <button disabled class="btn-modal" id="modal1-buy-button"
+                        onclick="addToCart('Produit 1', 'Description détaillée du produit 1', '400CHF')">Acheter
+                    </button>
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-detail" src="img/newproduct.png" alt="Bague 2">
+                </div>
+            </div>
+            <div class="product-modal row">
+                <div class="col-6">
+                    <h1 id="modal1-product-name">Nouveau produit</h1>
+                    <p id="modal1-product-description">Sera bientôt disponible dans nos magasin.</p>
+                    <select name="size" id="size-select" disabled>
+                        <option value="">taille de la bague</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <p id="modal1-product-price">Prix: 400CHF</p>
+                    <button disabled class="btn-modal" id="modal1-buy-button"
+                        onclick="addToCart('Produit 2', 'Description détaillée du produit 2', '400CHF')">Acheter
+                    </button>
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-detail" src="img/newproduct.png" alt="Bague 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="chatbox chatbox--closed">
+        <div class="chatbox-header">
+            <img src="img/chatbot.png">
+            <h4>Chatbot</h4>
+            <button class="chatbox-toggle" onclick="toggleChatbox()">-</button>
+        </div>
+        <div class="chatbox-body">
+            <div class="chatbox-messages"></div>
+        </div>
+        <div class="chatbox-footer">
+            <input type="text" class="chatbox-input" placeholder="Écrivez un message...">
+            <button class="chatbox-send"><i class="fa-solid fa-circle-right"></i></button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+        // Function to fetch and render products from JSON file
+        async function renderProducts() {
+            try {
+                const response = await fetch('json/products.json');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const products = await response.json();
+                renderProductList(products);
+            } catch (error) {
+                console.error('Failed to fetch products:', error);
+                // Display alternative data
+                const alternativeProducts = [
+                    {
+                        "title": "Modèle de bague pour graver",
+                        "imgSrc": "img/product.png",
+                        "imgAlt": "Bague 2",
+                        "description": "Une bague avec un gravage personnalisé.",
+                        "modalId": "modal2"
+                    },
+                    {
+                        "title": "Modèle de bague avec un désign",
+                        "imgSrc": "img/newproduct.png",
+                        "imgAlt": "Bague 1",
+                        "description": "Une bague élégante avec un design unique.",
+                        "modalId": "modal1"
+                    }
+                    
+                ];
+                renderProductList(alternativeProducts);
+            }
+        }
+
+        // Function to render product list
+        function renderProductList(products) {
+            const productList = document.getElementById('product-content');
+            const fragment = document.createDocumentFragment();
+            products.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.classList.add('product');
+                productElement.innerHTML = `
+            <img class="img-detail" src="${product.imgSrc}" alt="${product.imgAlt}">
+            <h2>${product.title}</h2>
+            <p>${product.description}</p>
+            <button onclick="document.getElementById('${product.modalId}').style.display='block'">Détail</button>
+        `;
+                fragment.appendChild(productElement);
+            });
+            productList.appendChild(fragment);
+        }
+
+        // Call the function to render products on page load
+        window.onload = renderProducts;
+
+        // Function to close modals when clicking outside of them
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        }
+
+        // Function to close modals using the keyboard
+        window.onkeydown = function (event) {
+            if (event.key === 'Escape') {
+                document.querySelectorAll('.modal').forEach(modal => {
+                    modal.style.display = 'none';
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

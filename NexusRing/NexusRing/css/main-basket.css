@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../font/nasalization-rg.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+nav {
+    font-family: 'Nasalization', sans-serif;
+    background: linear-gradient(to right, #1a5d81, #7c7494, #a4a4d4);
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#login {
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.title {
+    font-size: 25px;
+}
+
+.img-logo {
+    width: 110px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    color: #333;
+    padding-top: 40px;
+}
+
+#product-list {
+    display: flex;
+    margin-right: 5px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.img-detail {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#buy-all-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #a4a4d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buy-all-button:hover {
+    background-color: #3e2953;
+}

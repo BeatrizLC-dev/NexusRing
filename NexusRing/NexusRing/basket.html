@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main-basket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <img class="img-logo" src="img/NexusRing.png">
+        <p class="title">NexusRing</p>
+        <ul>
+            <li><a onclick="window.location.href='index.html'"><i class="fa-solid fa-house"></i> Accueil</a></li>
+            <li><a href="#support"><i class="fa-solid fa-headset"></i> Support</a></li>
+            <li><a href="#search"><i class="fas fa-search"></i> Search</a></li>
+            <li><a onclick="window.location.href='basket.html'"><i class="fa-solid fa-cart-shopping"></i> Basket</a>
+            </li>
+            <li><a id="login" onclick="window.location.href='login.html'"><i class="fa-solid fa-user"></i> Login</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Basket</h1>
+        <div id="product-list">
+            <!--Le javascript vient se mettre ici-->
+        </div>
+        <button id="buy-all-button">Acheter tous les produits</button>
+    </div>
+    <script>
+        // Function to fetch and render products from JSON file
+        async function renderCart() {
+            try {
+                const response = await fetch('json/basket.json');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const products = await response.json();
+                renderProductList(products);
+            } catch (error) {
+                console.error('Failed to fetch products:', error);
+                // Display alternative data
+                const alternativeProducts = [
+                    {
+                        "title": "Modèle femme avec gravage",
+                        "imgSrc": "img/modele-gravage3.png",
+                        "imgAlt": "Bague 1",
+                        "price": "300CHF"
+                    },
+                    {
+                        "title": "Modèle homme avec gravage",
+                        "imgSrc": "img/modele-gravage1.png",
+                        "imgAlt": "Bague 1",
+                        "price": "300CHF"
+                    },
+                    {
+                        "title": "Modèle femme sans gravage",
+                        "imgSrc": "img/modele-gravage2.png",
+                        "imgAlt": "Bague 1",
+                        "price": "300CHF"
+                    },
+                    {
+                        "title": "Modèle homme sans gravage",
+                        "imgSrc": "img/modele-gravage3.png",
+                        "imgAlt": "Bague 1",
+                        "price": "300CHF"
+                    }
+                ];
+                renderProductList(alternativeProducts);
+            }
+        }
+
+        // Function to render product list
+        function renderProductList(products) {
+            const productList = document.getElementById('product-list');
+            const fragment = document.createDocumentFragment();
+            products.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.classList.add('product');
+                productElement.innerHTML = `
+            <h2>${product.title}</h2>
+            <img class="img-detail" src="${product.imgSrc}" alt="${product.imgAlt}">
+            <p>${product.price}</p>
+        `;
+                fragment.appendChild(productElement);
+            });
+            productList.appendChild(fragment);
+        }
+
+        // Call the function to render products on page load
+        window.onload = renderCart;
+    </script>
+</body>
+
+</html>

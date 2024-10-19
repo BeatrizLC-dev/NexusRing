@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../font/nasalization-rg.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    font-family: 'Nasalization', sans-serif;
+    background: linear-gradient(to right, #1a5d81, #7c7494, #a4a4d4);
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#login {
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    color: white;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.img-logo {
+    width: 110px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 71px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.chatbox--closed {
+    transform: translateY(100%);
+}
+
+.chatbox-header {
+    background: linear-gradient(to right, #16ACF0, #5C78DD, #663FA8);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbox-header img {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.chatbox-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chatbox-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chatbox-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.chatbox-send {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chatbox-messages {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chatbox-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.product {
+    background-color: #847494;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 1em;
+    flex: 1 1 300px;
+}
+
+.product img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: white;
+}
+
+.product p {
+    font-size: 1em;
+    color: white;
+}
+
+.product button {
+    background-color: #08c5f5;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product button:hover {
+    background-color: #1a5d81;
+}
+
+.product-modal,
+.cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.img-detail {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-modal {
+    background-color: #a4a4d4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-modal:hover {
+    background-color: #3e2953;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}

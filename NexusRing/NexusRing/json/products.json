@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Modèle de bague pour graver",
+        "imgSrc": "img/product.png",
+        "imgAlt": "Bague 1",
+        "description": "Une bague avec un gravage personnalisé.",
+        "modalId": "modal2"
+    },
+    {
+        "title": "Modèle de bague avec un désign",
+        "imgSrc": "img/newproduct.png",
+        "imgAlt": "Bague 1",
+        "description": "Une bague élégante avec un design unique.",
+        "modalId": "modal1"
+    }
+    
+]

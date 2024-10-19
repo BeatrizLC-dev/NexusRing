@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Modèle femme avec gravage",
+        "imgSrc": "img/modele-gravage3.png",
+        "imgAlt": "Bague 1",
+        "price": "349CHF"
+    },
+    {
+        "title": "Modèle homme avec gravage",
+        "imgSrc": "img/modele-gravage1.png",
+        "imgAlt": "Bague 1",
+        "price": "349CHF"
+    },
+    {
+        "title": "Modèle femme sans gravage",
+        "imgSrc": "img/modele-gravage2.png",
+        "imgAlt": "Bague 1",
+        "price": "349CHF"
+    },
+    {
+        "title": "Modèle homme sans gravage",
+        "imgSrc": "img/modele-gravage3.png",
+        "imgAlt": "Bague 1",
+        "price": "349CHF"
+    }
+]
